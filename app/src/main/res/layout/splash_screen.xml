@@ -6,25 +6,27 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.pratap.lottieexample.MainActivity">
+    tools:context=".ui.SplashScreen">
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view_2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/bird_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:lottie_autoPlay="true"
         app:lottie_fileName="bird_animation.json"
         android:layout_margin="20dp"
-        app:lottie_loop="true" />
+        app:lottie_loop="true"
+        android:layout_weight="1"/>
 
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view_3"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/movie_animation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:lottie_autoPlay="true"
         app:lottie_fileName="ball_move_animation.json"
-        app:lottie_loop="true" />
+        app:lottie_loop="true"
+        android:layout_weight="1"/>
 
 
 </LinearLayout>
