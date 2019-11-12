@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="loading">Loading Please wait........</string>
+    <string name="error">Error</string>
+
+    <string name="app_name">MVP Android Kotlin</string>
+
+</resources>
