@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.es.android">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".ApplicationClass"
         android:allowBackup="true"
@@ -21,8 +23,9 @@
         <activity android:name=".ui.posts.PostActivity"/>
 
         <activity android:name=".ui.movie.MovieActivity" />
+        <activity android:name=".ui.login.PersonMainActivity" />
+        <activity android:name=".ui.login.EditActivity" />
 
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

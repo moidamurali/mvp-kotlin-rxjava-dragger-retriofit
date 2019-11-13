@@ -1,6 +1,7 @@
 package com.es.android.ui.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.AsyncTask
@@ -10,8 +11,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.Toast
 import com.es.android.R
 import com.es.android.data.MovieData
+import com.es.android.ui.login.PersonMainActivity
 import kotlinx.android.synthetic.main.movie_list_item.view.*
 import java.io.InputStream
 
@@ -44,6 +47,12 @@ class MovieAdapter(val movieItems: List<MovieData>, val context: Context) : Recy
         }
         holder?.itemView.tv_genre.text = genere
         holder?.loadimg  = loadImage(holder?.itemView.icon_view).execute(movieItems.get(position).image) as loadImage
+
+        holder?.itemView.setOnClickListener{
+            Toast.makeText(context,"RoomData Base Sample Will Launch", Toast.LENGTH_LONG).show()
+            context.startActivity(Intent(context,PersonMainActivity::class.java))
+        }
+
     }
 
 

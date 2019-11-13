@@ -3,6 +3,6 @@
     <string name="loading">Loading Please wait........</string>
     <string name="error">Error</string>
 
-    <string name="app_name">MVP Android Kotlin</string>
-
+    <string name="app_name">MVP+RXJava+RetrioFit+Dagger+Room+Kotlin</string>
+    <string name="enter_message">Enter message</string>
 </resources>
